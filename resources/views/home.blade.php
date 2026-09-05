@@ -742,10 +742,10 @@ CTA
     <div class="mt-10 flex flex-wrap justify-center gap-4">
 
         <a
-            href="{{ route('contact') }}"
-            class="rounded-xl bg-blue-600 px-7 py-4 text-sm font-bold text-white shadow-xl shadow-blue-600/20 transition hover:-translate-y-1 hover:bg-blue-700"
+            href="{{ route('quote') }}"
+            class="rounded-xl border border-slate-700 px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:border-slate-500 hover:bg-slate-900""
         >
-            Start Your Project
+            Start a Project
         </a>
 
         <a
