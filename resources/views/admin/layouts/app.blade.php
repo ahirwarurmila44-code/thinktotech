@@ -105,19 +105,27 @@
     </span>
 </a>
 
-                        <div class="rounded-xl px-4 py-3 text-sm text-slate-500">
-                            Inquiries
-                            <span class="float-right text-xs">
-                                Soon
-                            </span>
-                        </div>
+                        <a
+    href="{{ route('admin.inquiries.index') }}"
+    class="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-slate-400 transition hover:bg-white/5 hover:text-white"
+>
+    <span>Inquiries</span>
 
-                        <div class="rounded-xl px-4 py-3 text-sm text-slate-500">
-                            Quote Requests
-                            <span class="float-right text-xs">
-                                Soon
-                            </span>
-                        </div>
+    <span class="text-xs">
+        {{ \App\Models\ContactInquiry::where('status', 'new')->count() }}
+    </span>
+</a>
+
+                       <a
+    href="{{ route('admin.quote-requests.index') }}"
+    class="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-slate-400 transition hover:bg-white/5 hover:text-white"
+>
+    <span>Quote Requests</span>
+
+    <span class="text-xs">
+        {{ \App\Models\QuoteRequest::where('status', 'new')->count() }}
+    </span>
+</a>
 
                     </div>
 

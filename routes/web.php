@@ -10,6 +10,8 @@ use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AdminProjectController;  
 use App\Http\Controllers\AdminServiceController;  
+use App\Http\Controllers\AdminContactInquiryController;
+use App\Http\Controllers\AdminQuoteRequestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +55,19 @@ Route::middleware(['auth', 'admin'])
 
         Route::resource('projects', AdminProjectController::class);
         Route::resource('services', AdminServiceController::class);
+        Route::resource('inquiries',AdminContactInquiryController::class)->only([
+                        'index',
+                        'show',
+                        'update',
+                        'destroy',
+                    ]);
+
+        Route::resource('quote-requests',AdminQuoteRequestController::class)->only([
+                'index',
+                'show',
+                'update',
+                'destroy',
+            ]);
     });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
