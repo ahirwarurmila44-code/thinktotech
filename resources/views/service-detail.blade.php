@@ -2,8 +2,25 @@
 
 @section('title', $service->name . ' — ThinkToTech')
 
-@section('description', $service->short_description)
+@section(
+    'meta_description',
+    $service->short_description
+)
 
+@section(
+    'meta_keywords',
+    implode(', ', $service->technologies ?? [])
+)
+
+@section(
+    'og_title',
+    $service->name . ' — ThinkToTech'
+)
+
+@section(
+    'og_description',
+    $service->short_description
+)
 @section('content')
 
 <section class="bg-slate-950 py-24">

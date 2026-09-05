@@ -1,5 +1,15 @@
 @extends('layouts.app')
+@section('title', 'About ThinkToTech — Software Development Company')
 
+@section(
+    'meta_description',
+    'Learn about ThinkToTech, a software development company building modern websites, custom Laravel applications and business software.'
+)
+
+@section(
+    'meta_keywords',
+    'about ThinkToTech, software development company, Laravel developers, web development'
+)
 @section('content')
 
 <section class="mx-auto max-w-7xl px-6 py-24 lg:px-8">

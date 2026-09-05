@@ -2,8 +2,25 @@
 
 @section('title', $project->title . ' — ThinkToTech')
 
-@section('description', $project->short_description)
+@section(
+    'meta_description',
+    $project->short_description
+)
 
+@section(
+    'meta_keywords',
+    implode(', ', $project->technologies ?? [])
+)
+
+@section(
+    'og_title',
+    $project->title . ' — ThinkToTech'
+)
+
+@section(
+    'og_description',
+    $project->short_description
+)
 @section('content')
 
 {{-- Hero --}}

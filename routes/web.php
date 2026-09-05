@@ -12,6 +12,7 @@ use App\Http\Controllers\AdminProjectController;
 use App\Http\Controllers\AdminServiceController;  
 use App\Http\Controllers\AdminContactInquiryController;
 use App\Http\Controllers\AdminQuoteRequestController;
+use App\Http\Controllers\SitemapController;
 
 /*
 |--------------------------------------------------------------------------
@@ -89,3 +90,8 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 
 Route::get('/request-quote', [QuoteController::class, 'index'])->name('quote');
 Route::post('/request-quote', [QuoteController::class, 'store'])->name('quote.store');
+
+Route::get('/sitemap.xml', [
+    SitemapController::class,
+    'index'
+])->name('sitemap');

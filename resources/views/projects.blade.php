@@ -2,8 +2,15 @@
 
 @section('title', 'Our Projects — ThinkToTech')
 
-@section('description', 'Explore software, websites and digital solutions built by ThinkToTech.')
+@section(
+    'meta_description',
+    'Explore websites, business software, HRMS platforms and custom applications developed by ThinkToTech.'
+)
 
+@section(
+    'meta_keywords',
+    'ThinkToTech projects, Laravel projects, software projects, website portfolio'
+)
 @section('content')
 
 <section class="bg-slate-950 py-24">

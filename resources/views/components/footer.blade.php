@@ -24,6 +24,16 @@
                     that help businesses work smarter and grow digitally.
                 </p>
 
+                <a
+    href="https://wa.me/{{ env('WHATSAPP_NUMBER') }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-2xl text-white shadow-xl transition hover:scale-105"
+    aria-label="Chat with ThinkToTech on WhatsApp"
+>
+    💬
+</a>
+
             </div>
 
             {{-- Company Links --}}

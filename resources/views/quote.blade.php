@@ -2,8 +2,15 @@
 
 @section('title', 'Request a Quote — ThinkToTech')
 
-@section('description', 'Request a quote for your website or software project from ThinkToTech.')
+@section(
+    'meta_description',
+    'Request a quote from ThinkToTech for website development, custom Laravel software, business systems and API development.'
+)
 
+@section(
+    'meta_keywords',
+    'software development quote, website quote, Laravel development quote'
+)
 @section('content')
 
 <section class="bg-slate-950 py-24">

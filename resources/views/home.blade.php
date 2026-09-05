@@ -1,9 +1,27 @@
+
 @extends('layouts.app')
 
 @section('title', 'ThinkToTech — Modern Websites. Powerful Software.')
 
-@section('description', 'ThinkToTech builds modern websites, custom software and business solutions for growing companies.')
+@section(
+    'meta_description',
+    'ThinkToTech builds modern websites, custom Laravel software, business management systems and APIs for growing businesses.'
+)
 
+@section(
+    'meta_keywords',
+    'Laravel development, website development, custom software, business management system, API development'
+)
+
+@section(
+    'og_title',
+    'ThinkToTech — Modern Websites. Powerful Software.'
+)
+
+@section(
+    'og_description',
+    'Build your business with modern websites and powerful custom software from ThinkToTech.'
+)
 @section('content')
 
 {{-- =========================================================
@@ -742,18 +760,19 @@ CTA
     <div class="mt-10 flex flex-wrap justify-center gap-4">
 
         <a
-            href="{{ route('quote') }}"
-            class="rounded-xl border border-slate-700 px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:border-slate-500 hover:bg-slate-900""
-        >
-            Start a Project
-        </a>
+    href="{{ route('quote') }}"
+    class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700"
+>
+    Request a Quote
+    <span class="ml-2">→</span>
+</a>
 
         <a
-            href="{{ route('projects') }}"
-            class="rounded-xl border border-slate-700 px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:border-slate-500 hover:bg-slate-900"
-        >
-            Explore Our Work
-        </a>
+    href="{{ route('projects') }}"
+    class="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-bold text-slate-700 transition hover:bg-slate-50"
+>
+    View Our Work
+</a>
 
     </div>
 

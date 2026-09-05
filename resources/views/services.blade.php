@@ -1,9 +1,16 @@
 @extends('layouts.app')
 
-@section('title', 'Services — ThinkToTech')
+@section('title', 'Software Development Services — ThinkToTech')
 
-@section('description', 'Website development, Laravel software, APIs, database development and technical support from ThinkToTech.')
+@section(
+    'meta_description',
+    'Explore ThinkToTech services including website development, custom Laravel software, business management systems, APIs and database development.'
+)
 
+@section(
+    'meta_keywords',
+    'website development, Laravel development, custom software, API development, database development'
+)
 @section('content')
 
 <section class="bg-slate-950 py-24">

@@ -1,9 +1,15 @@
 @extends('layouts.app')
+@section('title', 'Contact ThinkToTech — Start Your Project')
 
-@section('title', 'Contact ThinkToTech')
+@section(
+    'meta_description',
+    'Contact ThinkToTech to discuss your website, software, API or business management system project.'
+)
 
-@section('description', 'Contact ThinkToTech about your website, software or digital project.')
-
+@section(
+    'meta_keywords',
+    'contact ThinkToTech, software development quote, website development contact'
+)
 @section('content')
 
 <section class="bg-slate-950 py-24">
