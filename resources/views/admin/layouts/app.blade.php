@@ -83,12 +83,16 @@
 
                     <div class="mt-2 space-y-1">
 
-                        <div class="rounded-xl px-4 py-3 text-sm text-slate-500">
-                            Projects
-                            <span class="float-right text-xs">
-                                Soon
-                            </span>
-                        </div>
+                        <a
+    href="{{ route('admin.projects.index') }}"
+    class="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-slate-400 transition hover:bg-white/5 hover:text-white"
+>
+    <span>Projects</span>
+
+    <span class="text-xs">
+        {{ \App\Models\Project::count() }}
+    </span>
+</a>
 
                         <div class="rounded-xl px-4 py-3 text-sm text-slate-500">
                             Services
