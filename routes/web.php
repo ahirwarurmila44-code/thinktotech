@@ -8,7 +8,8 @@ use App\Http\Controllers\QuoteController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\AdminDashboardController;
-use App\Http\Controllers\AdminProjectController;    
+use App\Http\Controllers\AdminProjectController;  
+use App\Http\Controllers\AdminServiceController;  
 
 /*
 |--------------------------------------------------------------------------
@@ -51,6 +52,7 @@ Route::middleware(['auth', 'admin'])
         ])->name('logout');
 
         Route::resource('projects', AdminProjectController::class);
+        Route::resource('services', AdminServiceController::class);
     });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');

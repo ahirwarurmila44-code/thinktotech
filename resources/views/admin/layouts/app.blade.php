@@ -94,12 +94,16 @@
     </span>
 </a>
 
-                        <div class="rounded-xl px-4 py-3 text-sm text-slate-500">
-                            Services
-                            <span class="float-right text-xs">
-                                Soon
-                            </span>
-                        </div>
+                        <a
+    href="{{ route('admin.services.index') }}"
+    class="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-slate-400 transition hover:bg-white/5 hover:text-white"
+>
+    <span>Services</span>
+
+    <span class="text-xs">
+        {{ \App\Models\Service::count() }}
+    </span>
+</a>
 
                         <div class="rounded-xl px-4 py-3 text-sm text-slate-500">
                             Inquiries
