@@ -766,6 +766,11 @@ CTA
     Request a Quote
     <span class="ml-2">→</span>
 </a>
+            href="{{ route('quote') }}"
+            class="rounded-xl border border-slate-700 px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:border-slate-500 hover:bg-slate-900""
+        >
+            Start a Project
+        </a>
 
         <a
     href="{{ route('projects') }}"

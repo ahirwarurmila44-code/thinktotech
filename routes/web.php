@@ -95,3 +95,4 @@ Route::get('/sitemap.xml', [
     SitemapController::class,
     'index'
 ])->name('sitemap');
+Route::post('/request-quote', [QuoteController::class, 'store'])->name('quote.store');
